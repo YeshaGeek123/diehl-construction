@@ -28,6 +28,19 @@
 	</footer><!-- #colophon -->
 </div><!-- #page -->
 
+<?php
+//Footer menu
+
+	// wp_nav_menu(
+	// array(
+	// 		'theme_location' => 'footer-menu',
+	// 		'menu_id'        => 'footer-menu',
+	// 	)
+	// );
+									
+// same contact form in contact page
+//echo do_shortcode('[contact-form-7 id="5" title="Contact Form"]');
+?>
 <?php wp_footer(); ?>
 
 </body>
