@@ -44,7 +44,7 @@
 					<div class="col-lg-10">
 						<div class="header-info for-des text-right">
 							<?php
-							//Phone number
+								//Phone number
 								$phone = get_field('phone_number','option');
 								$val = array("(", ")", " ", "-", ".");
 								$replace = array("", "", "", "", "");
@@ -53,7 +53,7 @@
 							?>
 							<ul>
 								<li>
-									<a href="tel:<?php echo $phone_link ?>" title="<?php echo $phone; ?>"><?php echo $phone; ?></a>
+									<a href="tel:<?php echo $phone_link ?>" title="<?php echo $phone; ?>"><span class="callus"><?php echo $phone; ?></span></a>
 								</li>
 								<li><a href="mailto:<?php the_field('email','options'); ?>" title="<?php the_field('email','options'); ?>"><?php the_field('email','options'); ?></a></li>
 								<li>
