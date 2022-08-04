@@ -4,7 +4,7 @@
         <div class="row">
             <div class="col-lg-12">
                 <div class="banner-content text-center">
-                    <h1 class="h1-title"><?php the_title(); ?></h1>
+                    <h1 class="h1-title wow fadeup-animation" data-wow-duration="0.8s" data-wow-delay="0.1s"><?php the_title(); ?></h1>
                 </div>
             </div>
         </div>
@@ -16,7 +16,7 @@
 <section class="main-contact-sec">
     <div class="container">
         <div class="row">
-            <div class="col-lg-6">
+            <div class="col-lg-6 order-2 order-lg-1 wow left-animation" data-wow-duration="0.8s" data-wow-delay="0.1s">
                 <div class="main-contact-content">
                     <h3 class="h3-title"><?php the_field('contact_details_title'); ?></h3>
                     <div class="footer-text">
@@ -33,31 +33,31 @@
                         ?>
                         <ul>
                             <li>
-                                <a href="tel:<?php echo $phone_link; ?>" title="<?php echo $phone; ?>">
-                                    <span class="icon"><i class="fas fa-phone"></i></span>
-                                    <span class="text">
-                                        <span class="title">Phone</span>
+                                <span class="icon"><i class="fas fa-phone"></i></span>
+                                <span class="text">
+                                    <span class="title">Phone</span>
+                                    <a href="tel:<?php echo $phone_link; ?>" title="<?php echo $phone; ?>">
                                         <span class="link callus"><?php echo $phone; ?></span>
-                                    </span>
-                                </a>
+                                    </a>
+                                </span>
                             </li>
                             <li>
-                                <a href="mailto:<?php the_field('email', 'options'); ?>" title="<?php the_field('email', 'options'); ?>">
-                                    <span class="icon"><i class="fas fa-paper-plane"></i></span>
-                                    <span class="text">
-                                        <span class="title">Email</span>
+                                <span class="icon"><i class="fas fa-paper-plane"></i></span>
+                                <span class="text">
+                                    <span class="title">Email</span>
+                                    <a href="mailto:<?php the_field('email', 'options'); ?>" title="<?php the_field('email', 'options'); ?>">
                                         <span class="link"><?php the_field('email', 'options'); ?></span>
-                                    </span>
-                                </a>
+                                    </a>
+                                </span>
                             </li>
                             <li>
-                                <a href="<?php the_field('address_link', 'options'); ?>" target="_blank" title="<?php the_field('address', 'options'); ?>">
-                                    <span class="icon"><i class="fas fa-map-marker-alt"></i></span>
-                                    <span class="text">
-                                        <span class="title">Address</span>
+                                <span class="icon"><i class="fas fa-map-marker-alt"></i></span>
+                                <span class="text">
+                                    <span class="title">Address</span>
+                                    <a href="<?php the_field('address_link', 'options'); ?>" target="_blank" title="<?php the_field('address', 'options'); ?>">
                                         <span class="link"><?php the_field('address', 'options'); ?></span>
-                                    </span>
-                                </a>
+                                    </a>
+                                </span>
                             </li>
                         </ul>
                     </div>
@@ -73,7 +73,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-6">
+            <div class="col-lg-6 order-1 order-lg-2 wow right-animation" data-wow-duration="0.8s" data-wow-delay="0.1s">
                 <div class="contact-form white-text">
                     <h3 class="h3-title">Contact</h3>
                     <?php

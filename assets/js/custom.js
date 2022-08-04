@@ -24,7 +24,9 @@ jQuery(document).ready(function($) {
                     slidesToShow: 2,
                     slidesToScroll: 2,
                     infinite: true,
-                    dots: true,
+                    dots: false,
+                    rows: 1,
+                    variableWidth: false
                 }
             },
             {
@@ -33,7 +35,9 @@ jQuery(document).ready(function($) {
                     slidesToShow: 1,
                     slidesToScroll: 1,
                     infinite: true,
-                    dots: true,
+                    dots: false,
+                    rows: 1,
+                    variableWidth: false
                 }
             }
         ]
@@ -65,8 +69,8 @@ jQuery(document).ready(function($) {
         }]
     });
 
-      // FANCY BOX
-      jQuery().fancybox({
+    // FANCY BOX
+    jQuery().fancybox({
         selector: '.gallery-slider a',
         "afterShow": function() {
             jQuery('.gallery-slider').slick('slickPause');
@@ -119,6 +123,6 @@ jQuery(window).on('load resize', function() {
             } else {
                 jQuery('.cta-wp').fadeOut();
             }
-        });  
-    } 
+        });
+    }
 });

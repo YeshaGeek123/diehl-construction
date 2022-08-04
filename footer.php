@@ -59,31 +59,31 @@
 							?>
 							<ul>
 								<li>
-									<a href="tel:<?php echo $phone_link; ?>" title="<?php echo $phone; ?>">
-										<span class="icon"><i class="fas fa-phone"></i></span>
-										<span class="text">
-											<span class="title">Phone</span>
-											<span class="link callus"><?php echo $phone; ?></span>
-										</span>
-									</a>
+									<span class="icon"><i class="fas fa-phone"></i></span>
+									<span class="text">
+										<span class="title">Phone</span>
+										<a href="tel:<?php echo $phone_link; ?>" class="link" title="<?php echo $phone; ?>">
+											<span class="callus"><?php echo $phone; ?></span>
+										</a>
+									</span>
 								</li>
 								<li>
-									<a href="mailto:<?php the_field('email', 'options'); ?>" title="<?php the_field('email', 'options'); ?>">
-										<span class="icon"><i class="fas fa-paper-plane"></i></span>
-										<span class="text">
-											<span class="title">Email</span>
-											<span class="link"><?php the_field('email', 'options'); ?></span>
-										</span>
-									</a>
+									<span class="icon"><i class="fas fa-paper-plane"></i></span>
+									<span class="text">
+										<span class="title">Email</span>
+										<a href="mailto:<?php the_field('email', 'options'); ?>" class="link" title="<?php the_field('email', 'options'); ?>">
+											<?php the_field('email', 'options'); ?>
+										</a>
+									</span>
 								</li>
 								<li>
-									<a href="<?php the_field('address_link', 'options'); ?>" target="_blank" title="<?php the_field('address', 'options'); ?>">
-										<span class="icon"><i class="fas fa-map-marker-alt"></i></span>
-										<span class="text">
-											<span class="title">Address</span>
-											<span class="link"><?php the_field('address', 'options'); ?></span>
-										</span>
-									</a>
+									<span class="icon"><i class="fas fa-map-marker-alt"></i></span>
+									<span class="text">
+										<span class="title">Address</span>
+										<a href="<?php the_field('address_link', 'options'); ?>" target="_blank" class="link" title="<?php the_field('address', 'options'); ?>">
+											<?php the_field('address', 'options'); ?>
+										</a>
+									</span>
 								</li>
 							</ul>
 						</div>

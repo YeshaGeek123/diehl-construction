@@ -4,7 +4,7 @@
         <div class="row">
             <div class="col-lg-12">
                 <div class="banner-content text-center">
-                    <h1 class="h1-title"><?php the_title(); ?></h1>
+                    <h1 class="h1-title wow fadeup-animation" data-wow-duration="0.8s" data-wow-delay="0.1s"><?php the_title(); ?></h1>
                 </div>
             </div>
         </div>
@@ -30,7 +30,7 @@
                             if(!empty($service_content)):
                             ?>
                             <div class="col-lg-6 order-2 order-lg-1">
-                                <div class="service-content">
+                                <div class="service-content wow left-animation" data-wow-duration="0.8s" data-wow-delay="0.1s">
                                     <div class="service-text">
                                         <?php echo $service_content; ?>
                                     </div>
@@ -43,7 +43,7 @@
                             if(!empty($service_image)):
                             ?>
                             <div class="col-lg-6 order-1 order-lg-2">
-                                <div class="service-img-wp">
+                                <div class="service-img-wp wow right-animation" data-wow-duration="0.8s" data-wow-delay="0.1s">
                                     <div class="service-img bg-img" style="background-image: url('<?php echo $service_image; ?>');"></div>
                                 </div>
                             </div>
@@ -59,13 +59,13 @@
                     <div class="service-list odd">
                         <div class="container">
                             <div class="row">
-                                <div class="col-lg-6">
-                                    <div class="service-img-wp">
+                                <div class="col-lg-6 wow">
+                                    <div class="service-img-wp wow left-animation" data-wow-duration="0.8s" data-wow-delay="0.1s">
                                         <div class="service-img bg-img" style="background-image: url('<?php echo $service_image; ?>');"></div>
                                     </div>
                                 </div>
                                 <div class="col-lg-6">
-                                    <div class="service-content">
+                                    <div class="service-content wow right-animation" data-wow-duration="0.8s" data-wow-delay="0.1s">
                                         <div class="service-text">
                                             <h3 class="h3-title"><?php echo  $service_title;  ?></h3>
                                             <ul>

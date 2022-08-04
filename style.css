@@ -1,8 +1,8 @@
 /*!
 Theme Name: diehl-construction
-Theme URI: http://underscores.me/
-Author: Underscores.me
-Author URI: http://underscores.me/
+Theme URI: https://www.dotcomdesign.com/
+Author: Dotcom Design
+Author URI: https://www.dotcomdesign.com/
 Description: Description
 Version: 1.0.0
 Tested up to: 5.4
@@ -1912,11 +1912,11 @@ button.close:hover {
 }
 
 .prev-arrow.slick-arrow {
-    margin-left: -251px;
+    margin-left: -234px;
 }
 
 .next-arrow.slick-arrow {
-    margin-left: 250px;
+    margin-left: 234px;
 }
 
 .slick-arrow::before {
@@ -1995,6 +1995,10 @@ button.close:hover {
 .simplebar-track {
     width: 3px;
     background: #F2F7FB;
+}
+
+.modal .simplebar-track {
+    background: var(--dark-color);
 }
 
 .simplebar-scrollbar {
@@ -2179,11 +2183,11 @@ button.close:hover {
 .site-branding::before {
     content: "";
     position: absolute;
-    width: 500%;
+    width: 570%;
     height: 100%;
     background: var(--white-color);
     top: 0;
-    right: -78px;
+    right: -79px;
     z-index: -1;
     transition: .3s;
 }
@@ -2211,8 +2215,12 @@ button.close:hover {
     padding-right: 15px;
 }
 
+.header-info li:last-child {
+    margin: 0 0 0 11px;
+}
+
 .header-info li:nth-child(2) {
-    margin: 0 30px 0 0;
+    margin: 0 24px 0 0;
 }
 
 .header-info li a {
@@ -2227,6 +2235,8 @@ button.close:hover {
 }
 
 .header-menu {
+    position: relative;
+    left: 20px;
     height: 80px;
     display: flex;
     align-items: center;
@@ -2242,7 +2252,7 @@ button.close:hover {
 
 .main-banner {
     position: relative;
-    padding: 254px 0 0;
+    padding: 255px 0 0;
     background-blend-mode: lighten;
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 91%, 50% 100%, 0 91%);
     clip-path: polygon(0 0, 100% 0, 100% 91%, 50% 100%, 0 91%);
@@ -2280,7 +2290,7 @@ button.close:hover {
 
 .banner-info-box {
     text-align: center;
-    padding: 48px 45px 110px;
+    padding: 48px 45px 74px;
     width: 25%;
 }
 
@@ -2463,6 +2473,10 @@ button.close:hover {
     margin: 0;
 }
 
+.service-list-wp .service-list.even:last-child {
+    padding-bottom: 75px;
+}
+
 .service-list.even::before {
     content: "";
     position: absolute;
@@ -2485,7 +2499,7 @@ button.close:hover {
     padding: 163px 0 300px;
     -webkit-clip-path: polygon(0 85px, 50% 0, 100% 85px, 100% 100%, 100% 100%, 0 100%);
     clip-path: polygon(0 85px, 50% 0, 100% 85px, 100% 100%, 100% 100%, 0 100%);
-    margin-top: -155px;
+    margin-top: -175px;
     z-index: 5;
 }
 
@@ -2546,7 +2560,7 @@ button.close:hover {
 .testimonial-sec {
     position: relative;
     background-color: var(--light-color);
-    padding: 100px 0 305px;
+    padding: 178px 0 305px;
     -webkit-clip-path: polygon(0 85px, 50% 0, 100% 85px, 100% 100%, 100% 100%, 0 100%);
     clip-path: polygon(0 85px, 50% 0, 100% 85px, 100% 100%, 100% 100%, 0 100%);
     margin-top: -122px;
@@ -2572,11 +2586,11 @@ button.close:hover {
     font-size: 20px;
     font-weight: 500;
     color: var(--dark-color);
-    margin-bottom: 4px;
+    margin-bottom: 7px;
 }
 
 .testimonial-content ul {
-    margin-bottom: 17px;
+    margin-bottom: 15px;
 }
 
 .testimonial-content ul li {
@@ -2723,15 +2737,12 @@ button.close:hover {
 
 .contact-link li {
     margin-bottom: 26px;
+    display: flex;
+    align-items: center;
 }
 
 .contact-link li:last-child {
     margin-bottom: 0;
-}
-
-.contact-link li a {
-    display: flex;
-    align-items: center;
 }
 
 .contact-link .icon {
@@ -2759,9 +2770,11 @@ button.close:hover {
 
 .contact-link .text .title {
     display: block;
+    color: var(--common-color);
 }
 
 .contact-link .text .link {
+    color: var(--common-color);
     transition: .3s;
 }
 
@@ -3000,6 +3013,7 @@ button.close:hover {
 .entry-content a {
     transition: .3s;
     color: var(--primary-color);
+    word-break: break-word;
 }
 
 .privacy-content p a:hover .privacy-content a:hover,
@@ -3730,11 +3744,40 @@ a.prev.page-numbers {
     .container {
         max-width: 1400px;
     }
+    .sec-1920 {
+        width: 2560px;
+    }
+    .about-content {
+        padding: 221px 65px 250px 0;
+    }
+    .service-img-wp,
+    .about-img-wp {
+        width: calc(100% + 25vw);
+    }
+    .img-shep {
+        top: -14px;
+    }
+    .testimonial-sec .img-shep {
+        text-align: center;
+        top: 0;
+    }
+    .testimonial-sec {
+        clip-path: polygon(0 113px, 50% 0, 100% 114px, 100% 100%, 100% 100%, 0 100%);
+    }
+    .gallery-img {
+        width: 320px;
+    }
+    .service-details-sec .service-list.odd {
+        margin-top: -100px;
+    }
 }
 
 @media screen and (max-width: 1499px) {
     .main-navigation a {
         font-size: 14px;
+    }
+    .service-details-sec .service-list.odd {
+        margin-top: -118px;
     }
 }
 
@@ -3762,6 +3805,7 @@ a.prev.page-numbers {
     .service-list.even {
         margin-top: -90px;
     }
+    .service-details-sec .service-list.odd .service-content,
     .service-list.odd .service-content {
         padding: 0 0 0 30px;
     }
@@ -3777,6 +3821,12 @@ a.prev.page-numbers {
     .footer-social-link .tw span,
     .footer-social-link .fb span {
         margin-right: 10px;
+    }
+    .main-contact-content {
+        padding: 32px 10px 0 0;
+    }
+    .main-contact-sec .contact-form {
+        padding: 0 0 0 10px;
     }
 }
 
@@ -3823,6 +3873,7 @@ a.prev.page-numbers {
     }
     .site-header .row {
         height: 100%;
+        margin: 0;
     }
     .site-header .col-lg-2 {
         display: block;
@@ -3830,9 +3881,14 @@ a.prev.page-numbers {
         padding: 0;
         height: 100%;
         position: absolute;
-        top: 0;
+        top: 50%;
         left: 30px;
+        transform: translate(0, -50%);
         z-index: 2;
+    }
+    .site-header .col-lg-10 {
+        padding: 0;
+        height: 100%;
     }
     .site-branding {
         width: 95px;
@@ -3881,6 +3937,7 @@ a.prev.page-numbers {
     .header-menu {
         height: 100%;
         display: block;
+        left: 0;
     }
     .header-mobile-menu {
         position: absolute;
@@ -3912,9 +3969,10 @@ a.prev.page-numbers {
     .main-navigation {
         width: 100%;
         height: 100%;
-        transform: scale(1);
+        transform: unset;
         left: 0;
         text-align: left;
+        display: block;
     }
     .main-navigation ul {
         text-align: left;
@@ -3939,9 +3997,13 @@ a.prev.page-numbers {
         justify-content: flex-start;
         padding: 0;
     }
-    .main-navigation ul li a:hover {
+    .main-navigation li a:hover {
         background: transparent;
         color: var(--white-color);
+    }
+    .main-navigation li.current_page_item a {
+        background: var(--secondary-color);
+        color: var(--dark-color);
     }
     .main-navigation li.current_page_item a {
         justify-content: center;
@@ -4000,6 +4062,252 @@ a.prev.page-numbers {
     .banner-info-box {
         width: 100%;
     }
+    .main-banner {
+        padding: 222px 0 0;
+    }
+    .h1-title {
+        margin-bottom: 25px;
+    }
+    .h3-title {
+        font-size: 30px;
+        line-height: 30px;
+    }
+    .banner-content .h3-title {
+        margin-bottom: 31px;
+    }
+    .banner-content {
+        margin-bottom: 80px;
+    }
+    .banner-info-box {
+        padding: 40px 30px 40px;
+    }
+    .banner-info .banner-info-box:nth-child(1) {
+        border-radius: 20px 20px 0 0;
+    }
+    .banner-info .banner-info-box:nth-child(4) {
+        border-radius: 0;
+    }
+    .about-content {
+        padding: 0;
+    }
+    .about-sec {
+        padding: 190px 0 183px;
+    }
+    .about-img-wp {
+        height: 400px;
+        width: 100%;
+        left: 0;
+        margin-bottom: 21px;
+    }
+    .h2-title {
+        font-size: 40px;
+        margin-bottom: 12px;
+        line-height: 48px;
+    }
+    .service-img-wp {
+        height: 400px;
+        width: 100%;
+        margin-bottom: 27px;
+    }
+    .service-list.odd .service-img-wp {
+        left: 0;
+    }
+    .service-list.even .service-img-wp {
+        right: 0;
+    }
+    .service-list-wp {
+        margin: 0;
+        padding: 110px 0 0;
+    }
+    .our-service-sec::before {
+        height: 200px;
+    }
+    .our-service-sec {
+        padding: 70px 0 0;
+    }
+    .service-content .h3-title {
+        margin-bottom: 17px;
+    }
+    .service-content p {
+        height: auto;
+        overflow: visible;
+        text-overflow: unset;
+        -webkit-line-clamp: unset;
+        margin-bottom: 23px;
+    }
+    .service-list.even .service-content,
+    .service-list.odd .service-content {
+        padding: 0;
+    }
+    .service-list.odd,
+    .service-list.even {
+        margin: 40px 0 0;
+    }
+    .service-list.even::before {
+        width: 100%;
+    }
+    .service-list.even {
+        padding: 30px 0;
+    }
+    .service-list-wp .service-list.even:last-child,
+    .service-list-wp .service-list:last-child {
+        padding-bottom: 235px;
+    }
+    .gallery-sec {
+        padding: 71px 0 252px;
+    }
+    .gallery-sec .h2-title {
+        margin-bottom: 20px;
+    }
+    .gallery-slider .slick-list {
+        margin-left: 0;
+    }
+    .gallery-img {
+        width: 100%;
+        margin: 0 0 20px;
+    }
+    .gallery-slider .slick-slide {
+        margin: 0 15px;
+    }
+    .prev-arrow.slick-arrow {
+        margin-left: -50px;
+    }
+    .next-arrow.slick-arrow {
+        margin-left: auto;
+        left: auto;
+        right: 50%;
+        margin-right: -50px;
+    }
+    .slick-arrow {
+        transform: translate(0, 0);
+    }
+    .testimonial-content {
+        padding: 26px 30px 28px 30px;
+    }
+    .testimonial-sec .h2-title {
+        margin-bottom: 1px;
+    }
+    .testimonial-slider .slick-track {
+        padding: 20px 0 21px;
+    }
+    .testimonial-sec {
+        padding: 70px 0 230px;
+    }
+    .top-footer::before {
+        display: none;
+    }
+    .top-footer {
+        padding: 69px 0 77px;
+    }
+    .contact-form {
+        padding: 0 0 7px;
+        margin-bottom: 72px;
+        position: relative;
+        text-align: center;
+    }
+    .modal .contact-form {
+        margin: 0;
+    }
+    .contact-form::before {
+        content: "";
+        position: absolute;
+        width: 200%;
+        height: 125%;
+        background: var(--primary-color);
+        top: -100px;
+        left: -160px;
+        z-index: -1;
+    }
+    .modal .contact-form::before {
+        display: none;
+    }
+    .footer-content {
+        padding: 0;
+        text-align: center;
+    }
+    .contact-form .h3-title {
+        margin-bottom: 17px;
+    }
+    .footer-logo {
+        justify-content: center;
+        margin-bottom: 21px;
+    }
+    .footer-social-link {
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 30px;
+    }
+    .footer-social-link a+a {
+        margin: 20px 0 0;
+    }
+    .footer-text {
+        margin-bottom: 23px;
+    }
+    .contact-link li {
+        flex-direction: column;
+    }
+    .contact-link .text {
+        margin: 0;
+    }
+    .contact-link .icon {
+        margin-bottom: 21px;
+    }
+    .footer-menu li a {
+        padding-right: 15px;
+        margin-left: 10px;
+    }
+    .footer-bottom {
+        padding: 45px 0 40px;
+    }
+    .service-details-sec .service-list .service-img-wp {
+        height: 400px;
+        margin-bottom: 22px;
+    }
+    .inner-banner {
+        padding: 172px 0 110px;
+    }
+    .service-details-sec .service-list .service-content {
+        margin: 0;
+    }
+    .service-details-sec {
+        padding: 197px 0 230px;
+    }
+    .service-details-sec .service-list.even,
+    .service-details-sec .service-list.odd {
+        margin: 0;
+        padding: 0;
+    }
+    .service-details-sec .service-list.odd .service-content {
+        padding: 0;
+        margin: 0;
+    }
+    .service-details-sec .service-content .h3-title {
+        margin-bottom: 13px;
+    }
+    .main-contact-sec:after {
+        display: none;
+    }
+    .main-contact-content {
+        padding: 0;
+        text-align: center;
+    }
+    .main-contact-sec .contact-form {
+        padding: 0 0 11px;
+        margin: 0 0 67px;
+    }
+    .main-contact-content .h3-title {
+        margin-bottom: 17px;
+    }
+    .main-contact-content .footer-text {
+        margin-bottom: 23px;
+    }
+    .main-contact-content .contact-link {
+        margin-bottom: 27px;
+    }
+    .main-contact-sec {
+        padding: 155px 0 150px;
+    }
 }
 
 @media screen and (max-width: 767px) {
@@ -4014,6 +4322,25 @@ a.prev.page-numbers {
         max-width: unset;
         width: calc(100vw - 60px);
     }
+    .h1-title {
+        font-size: 55px;
+        line-height: 55px;
+    }
+    .h3-title {
+        font-size: 26px;
+        line-height: 30px;
+    }
+    .banner-btn .sec-btn {
+        display: flex;
+    }
+    .banner-btn {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .banner-btn .sec-btn+.sec-btn {
+        margin: 15px 0 0;
+    }
 }
 
 @media screen and (max-width: 575px) {
@@ -4027,6 +4354,7 @@ a.prev.page-numbers {
     .container,
     .container-fluid {
         padding: 0 30px;
+        width: 100vw;
     }
     .privacy-content ol,
     .privacy-content ul,
@@ -4046,12 +4374,118 @@ a.prev.page-numbers {
     .page-numbers li {
         margin-bottom: 10px;
     }
+    .main-banner {
+        padding: 173px 0 0;
+    }
+    .h1-title {
+        font-size: 10vw;
+        line-height: 10vw;
+        margin-bottom: 19px;
+    }
+    .banner-content {
+        margin-bottom: 50px;
+    }
+    .banner-info-box {
+        padding: 30px;
+    }
+    .about-img-wp {
+        height: 300px;
+    }
+    .about-sec {
+        padding: 170px 0 163px;
+    }
+    .service-img-wp {
+        clip-path: polygon(0 30px, 100% 0, 100% 100%, 0 95%);
+        height: 300px;
+    }
+    .service-list-wp {
+        padding: 87px 0 0;
+    }
+    .h2-title {
+        font-size: 34px;
+        line-height: 44px;
+    }
+    .our-service-sec {
+        padding: 65px 0 0;
+    }
+    .our-service-sec::before {
+        height: 180px;
+    }
+    .service-content .h3-title {
+        margin-bottom: 16px;
+    }
+    .service-list-wp .service-list.even:last-child,
+    .service-list-wp .service-list:last-child {
+        padding-bottom: 215px;
+    }
+    .gallery-sec {
+        padding: 61px 0 242px;
+    }
+    .testimonial-sec {
+        padding: 51px 0 210px;
+    }
+    .testimonial-content ul {
+        margin-bottom: 16px;
+    }
+    .top-footer {
+        padding: 46px 0 57px;
+    }
+    .footer-logo {
+        flex-direction: column;
+    }
+    .footer-logo a+a {
+        margin: 30px 0 0;
+    }
+    .footer-menu li {
+        display: block;
+    }
+    .footer-menu li a {
+        padding: 0;
+        margin: 0;
+        border: 0;
+    }
+    .slick-arrow::before {
+        width: 12px;
+        height: 12px;
+    }
+    .h3-title {
+        font-size: 20px;
+        line-height: 28px;
+    }
+    .banner-info-box h4 {
+        font-size: 18px;
+    }
+    .popup-title .h2-title {
+        font-size: 24px;
+        line-height: 34px;
+    }
+    .inner-banner {
+        padding: 153px 0 53px;
+        clip-path: polygon(0 0, 100% 0, 100% 70%, 50% 100%, 0 70%);
+    }
+    .service-details-sec .service-list .service-img-wp {
+        height: 300px;
+    }
+    .contact-form .h3-title {
+        font-size: 26px;
+    }
+    .main-navigation ul li a {
+        font-size: 18px;
+    }
+    .main-contact-sec {
+        padding: 155px 0 130px;
+    }
+    .footer-other-link p a {
+        display: block;
+    }
+    .testimonial-content .overflow-text {
+        padding-right: 20px;
+    }
 }
 
 @media screen and (max-width: 400px) {
     .container,
-    .container-fluid,
-    .site-header .container {
+    .container-fluid {
         padding: 0 15px;
     }
     .modal-dialog {
@@ -4060,7 +4494,7 @@ a.prev.page-numbers {
     .common-popup-text {
         padding: 20px 15px;
     }
-    .site-branding {
+    .site-header .col-lg-2 {
         left: 15px;
     }
     .menu-toggle {
@@ -4074,6 +4508,7 @@ a.prev.page-numbers {
     }
     .form-input.wpcf7-textarea {
         padding: 15px;
+        height: 115px;
     }
     .form-element i {
         right: 10px;
@@ -4084,6 +4519,41 @@ a.prev.page-numbers {
     .common-popup-text {
         padding: 20px 15px !important;
         max-height: 75vh;
+    }
+    .main-navigation ul li {
+        margin-bottom: 3vh;
+    }
+    .banner-info-box {
+        padding: 20px 15px;
+    }
+    .service-details-sec .service-list .service-img-wp,
+    .service-img-wp,
+    .about-img-wp {
+        height: 280px;
+    }
+    .footer-bottom-link ul li {
+        padding-right: 8px;
+        margin-right: 8px;
+    }
+    .testimonial-content {
+        padding: 20px 15px;
+    }
+    .popup-title .h2-title {
+        font-size: 20px;
+        line-height: 30px;
+    }
+    .service-details-sec .service-text ul li {
+        padding: 0 0 0 25px;
+        font-size: 15px;
+    }
+    .service-details-sec .service-content .h3-title {
+        margin-bottom: 11px;
+    }
+    .main-navigation li.current_page_item a {
+        padding: 0 20px;
+    }
+    .main-navigation ul li a {
+        font-size: 15px;
     }
 }
 
